@@ -3,17 +3,16 @@ About zenoh-pico-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/zenoh-pico-feedstock/blob/main/LICENSE.txt)
 
-Home: https://zenoh.io
+Home: https://zenoh.io/
 
 Package license: EPL-2.0 OR Apache-2.0
 
 Summary: Eclipse zenoh for pico devices - A lightweight C implementation of the Zenoh protocol
 for constrained devices and microcontrollers
 
-
 Development: https://github.com/eclipse-zenoh/zenoh-pico
 
-Documentation: https://zenoh-pico.readthedocs.io
+Documentation: https://zenoh-pico.readthedocs.io/
 
 zenoh-pico is the Eclipse zenoh implementation that targets constrained devices,
 offering a native C API. It is fully compatible with its main Rust Zenoh implementation,
@@ -27,7 +26,6 @@ beyond any of the mainstream stacks.
 zenoh-pico supports various platforms including Unix, Zephyr, Arduino, ESP-IDF,
 MbedOS, FreeRTOS, and Raspberry Pi Pico, with transport protocols including
 UDP (unicast and multicast), TCP, Serial, WebSocket, and more.
-
 
 Current build status
 ====================
