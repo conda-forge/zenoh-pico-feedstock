@@ -1,6 +1,6 @@
 context:
   name: zenoh-pico
-  version: "1.8.0"
+  version: "1.10.2"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/eclipse-zenoh/${{ name }}/archive/refs/tags/${{ version }}.tar.gz
-  sha256: 2aa7f8207467a84d6d204a4be5ea66dd0ea8038a7a6a55cb90c13059fb3116fb
+  sha256: e862b5faecdc97c1c35de2c38fe4125887dccd582bd975352bf67e1a900fcb19
 
 build:
   number: 0
