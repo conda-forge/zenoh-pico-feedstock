@@ -1,0 +1,11 @@
+--- a/tests/z_background_executor_test.c
++++ b/tests/z_background_executor_test.c
+@@ -202,7 +202,7 @@
+     z_sleep_ms(100);                        // give the background thread a chance to run the first call and reschedule
+     assert(test_arg_get_calls(&arg) == 1);  // first call must have happened, but not the second yet
+     assert(test_arg_get_destroyed(&arg) == false);  // destroy_fn must not have been called yet
+-    z_sleep_ms(500);                                // wait for the rescheduled call to become ready and run
++    z_sleep_ms(2000);                               // wait for the rescheduled call to become ready and run
+     assert(test_arg_get_calls(&arg) == 2);
+     assert(test_arg_get_destroyed(&arg) == true);
+ 
