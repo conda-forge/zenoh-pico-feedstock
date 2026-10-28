@@ -16,7 +16,10 @@ build:
   script:
     - cmake -DBUILD_EXAMPLES=OFF -S . -B build ${CMAKE_ARGS}
     - cmake --build build --config Release
-    - ctest --test-dir build --output-on-failure
+    # z_package_mylinux_test builds a Linux-only example platform package (uses pthread_condattr_setclock)
+    - if: osx
+      then: ctest --test-dir build --output-on-failure -E z_package_mylinux_test
+      else: ctest --test-dir build --output-on-failure
     - cmake --install build --config Release
 
 requirements:
