@@ -9,6 +9,9 @@ package:
 source:
   url: https://github.com/eclipse-zenoh/${{ name }}/archive/refs/tags/${{ version }}.tar.gz
   sha256: e862b5faecdc97c1c35de2c38fe4125887dccd582bd975352bf67e1a900fcb19
+  patches:
+    # widen a 100 ms timing margin that is flaky on loaded CI runners
+    - patches/0001-widen-timed-reschedule-test-margin.patch
 
 build:
   number: 0
